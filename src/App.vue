@@ -4,7 +4,7 @@
 import { ref, computed, reactive } from 'vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
-import { InformationCircleIcon, HomeIcon } from '@heroicons/vue/24/outline'
+import { InformationCircleIcon, HomeIcon, BookOpenIcon } from '@heroicons/vue/24/outline'
 import Navbar from './components/layout/Navbar.vue'
 
 export default {
@@ -12,6 +12,7 @@ export default {
 
     InformationCircleIcon,
     HomeIcon,
+    BookOpenIcon,
     Navbar
   },
   setup() {
@@ -35,12 +36,12 @@ export default {
         menuIcon: 'InformationCircleIcon',
         active: false,
       },
-      // {
-      //   menuName: 'comment',
-      //   menuPath: '/comment',
-      //   menuIcon: 'ChatBubbleLeftRightIcon',
-      //   active: false,
-      // },
+      {
+        menuName: 'test',
+        menuPath: '/test',
+        menuIcon: 'BookOpenIcon',
+        active: false,
+      },
     ])
 
     const store = useStore()
@@ -77,7 +78,7 @@ export default {
   <div v-if="user.isLogin">
     <Navbar @onExpand="onExpand" />
     <aside
-      :class="expand ? 'fixed bg-white w-44 h-screen pt-14 py-5 shadow overflow-auto bg-opacity-95' : 'fixed bg-white w-18 h-screen pt-14 py-5 shadow overflow-auto hidden md:block'">
+      :class="expand ? 'fixed block bg-orange-400 w-44 h-screen pt-14 py-5 shadow overflow-auto bg-opacity-100' : 'fixed bg-white w-18 h-screen pt-14 py-5 shadow overflow-auto hidden md:block'">
       <div v-for="menu of listMenu">
         <div class="flex flex-col text-left px-3">
           <router-link :to="menu.menuPath"

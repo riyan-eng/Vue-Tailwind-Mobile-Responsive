@@ -1,10 +1,10 @@
 <template>
-    <div class="flex flex-row h-screen">
-        <div class="w-1/2">
+    <div class="md:flex md:flex-row h-screen">
+        <div class="md:w-1/2 hidden md:block">
             <img src="../assets/image1.jpg" class="h-screen" alt="">
         </div>
-        <div class="w-1/2 bg-teal-300">
-            <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="md:w-1/2 bg-teal-300">
+            <div class="flex h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                 <div class="w-full max-w-md space-y-8">
                     <div>
                         <img class="mx-auto h-12 w-auto"
@@ -20,16 +20,16 @@
                     <div class="space-y-1">
                         <p class="text-gray-600">Join with</p>
                         <div class="flex justify-between">
-                            <div class="bg-white w-24 p-2 flex justify-center rounded-lg" style="cursor: pointer">
+                            <div class="bg-white md:w-24 w-20 p-2 flex justify-center rounded-lg" style="cursor: pointer">
                                 <img src="../assets/facebook.png" class="h-5" alt="">
                             </div>
-                            <div class="bg-white w-24 p-2 flex justify-center rounded-lg" style="cursor: pointer">
+                            <div class="bg-white md:w-24 w-20 p-2 flex justify-center rounded-lg" style="cursor: pointer">
                                 <img src="../assets/github.png" class="h-5" alt="">
                             </div>
-                            <div class="bg-white w-24 p-2 flex justify-center rounded-lg" style="cursor: pointer">
+                            <div class="bg-white md:w-24 w-20 p-2 flex justify-center rounded-lg" style="cursor: pointer">
                                 <img src="../assets/google.png" class="h-5" alt="">
                             </div>
-                            <div class="bg-white w-24 p-2 flex justify-center rounded-lg" style="cursor: pointer">
+                            <div class="bg-white md:w-24 w-20 p-2 flex justify-center rounded-lg" style="cursor: pointer">
                                 <img src="../assets/twitter.png" class="h-5" alt="">
                             </div>
                         </div>

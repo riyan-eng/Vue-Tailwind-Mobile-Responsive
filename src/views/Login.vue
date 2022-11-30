@@ -1,10 +1,10 @@
 <template>
-    <div class="flex flex-row h-screen">
-        <div class="w-1/2">
+    <div class="md:flex md:flex-row h-screen">
+        <div class="md:w-1/2 hidden md:block">
             <img src="../assets/image1.jpg" class="h-screen" alt="">
         </div>
-        <div class="w-1/2 bg-teal-300">
-            <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="md:w-1/2 bg-teal-300">
+            <div class="flex h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                 <div class="w-full max-w-md space-y-8">
                     <div>
                         <img class="mx-auto h-12 w-auto"

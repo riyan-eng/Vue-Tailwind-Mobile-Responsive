@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@andresouzaabreu/vue-data-table": "^3.3.3",
     "@heroicons/vue": "^2.0.13",
     "axios": "^1.2.0",
     "secure-ls": "^1.2.6",

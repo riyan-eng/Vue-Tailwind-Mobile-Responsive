@@ -42,6 +42,12 @@ export default {
         menuIcon: 'BookOpenIcon',
         active: false,
       },
+      {
+        menuName: 'test 2',
+        menuPath: '/test2',
+        menuIcon: 'BookOpenIcon',
+        active: false,
+      },
     ])
 
     const store = useStore()
